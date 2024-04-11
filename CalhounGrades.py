@@ -129,7 +129,7 @@ df = pd.DataFrame({'Course': filtered_courses, 'Points': [data[0] for data in pr
 column_widths = {'Course': 530, 'Points': 160, 'Percent': 100, 'Letter': 100}
 filename = 'grades.xlsx'
 
-with pd.ExcelWriter(filename, engine='xlsxw riter') as writer:
+with pd.ExcelWriter(filename, engine='xlsxwriter') as writer:
     df.to_excel(writer, index=False)
 
     workbook = writer.book
