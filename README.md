@@ -2,7 +2,7 @@
 Scrapes grades off Blackboard and converts them into Points, Precentages, and letter grade inside of an Excel Sheet
 
 ## Requirements
-Requires a Calhoun Community College login. <br>
+Requires a Calhoun Community College student login. <br>
 However, you can easily edit the script to work with your school if they use Blackboard.
 
 ## Example
