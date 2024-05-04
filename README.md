@@ -1,5 +1,5 @@
 # CalhounGrades
-Scrapes grades off Blackboard and converts them into Points, Precentages, and letter grade inside of an Excel Sheet
+Scrapes grades off Blackboard and converts them into Points, Precentages, and Letter Grade inside of an Excel Sheet
 
 ## Requirements
 Requires a Calhoun Community College student login. <br>
