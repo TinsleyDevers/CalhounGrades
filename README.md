@@ -2,8 +2,7 @@
 Scrapes grades off Blackboard and converts them into Points, Precentages, and Letter Grade inside of an Excel Sheet
 
 ## Requirements
-Requires a Calhoun Community College student login. <br>
-However, you can easily edit the script to work with your school if they use Blackboard.<br>
+Requires a Calhoun Community College student login. (However, you can easily edit the script to work with your school if they use Blackboard).<br>
 pip install xlsxwriter
 
 ## Example
