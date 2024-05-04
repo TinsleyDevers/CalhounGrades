@@ -8,13 +8,13 @@ import time
 import re
 
 # set your username and password here!!!
-username = "Your A# Here (e.g. a02345678)"
+username = "Your Calhoun Email Here (e.g. yourname@calhoun.edu)"
 password = "Your Password Here!"
     
 # if you get any errors, try changing time.sleep values or changing the exclude list
 
 # exits if you didn't set your username and password above.
-if username == "Your A# Here (e.g. a02345678)" or password == "Your Password Here!":
+if username == "Your Calhoun Email Here (e.g. yourname@calhoun.edu)" or password == "Your Password Here!":
     print("Please set your username and password in the script.")
     exit()
 
@@ -51,25 +51,25 @@ driver = webdriver.Chrome()
 
 # calhoun website login
 driver.get("https://id.quicklaunch.io/calhoun")
-time.sleep(5)
+time.sleep(2)
 
 # inputs username in username field
-username_field = driver.find_element(By.ID, "branding-username")
+username_field = driver.find_element(By.ID, "usernameUserInput")
 username_field.send_keys(username)
 
 # inputs password in password field
-password_field = driver.find_element(By.ID, "branding-password")
+password_field = driver.find_element(By.ID, "password")
 password_field.send_keys(password)
 
 # clicks login button
-login_button = driver.find_element(By.CLASS_NAME, "btn.btn-primary.mrg-T30.ng-binding")
+login_button = driver.find_element(By.CLASS_NAME, "form-actions")
 login_button.click()
-time.sleep(10)
+time.sleep(5)
 
 main_window = driver.current_window_handle
 
-# launch blackboard to save login data
-blackboardlink = driver.find_element(By.XPATH, "//a[@href='https://portal.calhoun.edu/admin/secured/695/api/launch/5743']")
+# launch blackboard to save login data to later open the grade page
+blackboardlink = driver.find_element(By.XPATH, "//a[@href='https://blackboard.calhoun.edu/auth-saml/saml/login?apId=_192_1&redirectUrl=https%3A%2F%2Fblackboard.calhoun.edu%2Fultra%2Finstitution-page']")
 blackboardlink.click()
 time.sleep(4)
 
