@@ -68,7 +68,7 @@ time.sleep(5)
 
 main_window = driver.current_window_handle
 
-# launch blackboard to save login data to later open the grade page
+# launch blackboard to save login cookies/data to later open the grade page
 blackboardlink = driver.find_element(By.XPATH, "//a[@href='https://blackboard.calhoun.edu/auth-saml/saml/login?apId=_192_1&redirectUrl=https%3A%2F%2Fblackboard.calhoun.edu%2Fultra%2Finstitution-page']")
 blackboardlink.click()
 time.sleep(4)
