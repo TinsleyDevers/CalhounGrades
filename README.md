@@ -16,3 +16,5 @@ pip install xlsxwriter
 
 ## Example
 ![image](https://github.com/TinsleyDevers/CalhounGrades/assets/75707609/4e1342f3-7558-4515-a7bc-deac17daeef0)
+
+**Note:** Calhoun Community College is transitioning to Canvas in Fall 2024, so this script will no longer function after the switch.
